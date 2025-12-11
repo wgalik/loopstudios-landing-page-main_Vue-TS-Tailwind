@@ -63,7 +63,7 @@ onUnmounted(() => {
     <ProductsSection :isSm />
   </main>
   <footer
-    class="mt-20 flex w-full flex-col items-center justify-center bg-(--black)"
+    class="mt-20 flex min-h-50 w-full flex-col items-center justify-center bg-(--black)"
   >
     <FooterNav :handleMenu :isMenuOpen :menuItems class="" />
   </footer>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import LogoContainer from './cards/LogoContainer.vue'
-import MenuItem from './cards/MenuItem.vue'
+import MenuLink from './cards/MenuLink.vue'
 import FooterSocials from './cards/FooterSocials.vue'
 
 interface MenuItem {
@@ -23,11 +23,11 @@ const { handleMenu, isMenuOpen, menuItems } = defineProps<{
     <ul
       class="flex w-full flex-col items-center justify-center gap-1 transition-all duration-500 ease-linear sm:col-start-1 sm:h-full sm:w-auto sm:flex-row sm:justify-start sm:gap-5"
     >
-      <MenuItem v-for="item in menuItems" :key="item.id" :handleMenu :item />
+      <MenuLink v-for="item in menuItems" :key="item.id" :handleMenu :item />
     </ul>
     <FooterSocials />
     <p
-      class="p-4 text-(--grey200) sm:col-start-2 sm:row-start-2 sm:row-end-3 sm:text-right"
+      class="p-4 text-center text-(--grey200) sm:col-start-2 sm:row-start-2 sm:row-end-3 sm:text-right"
     >
       © 2021 Loopstudios. All rights reserved.
     </p>

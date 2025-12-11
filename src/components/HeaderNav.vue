@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import HamburgerButton from './cards/HamburgerButton.vue'
 import LogoContainer from './cards/LogoContainer.vue'
-import MenuItem from './cards/MenuItem.vue'
+import MenuLink from './cards/MenuLink.vue'
 
 interface MenuItem {
   id: number
@@ -25,7 +25,7 @@ const { isMenuOpen, handleMenu, menuItems } = defineProps<{
       class="absolute top-0 flex h-dvh w-dvw shrink-2 flex-col items-start justify-start gap-1 bg-(--black) transition-all duration-500 ease-linear sm:static sm:h-full sm:w-auto sm:flex-row sm:items-center sm:justify-end sm:gap-5 sm:bg-transparent md:gap-7"
       :class="isMenuOpen ? 'left-0' : '-left-160'"
     >
-      <MenuItem
+      <MenuLink
         v-for="item in menuItems"
         :key="item.id"
         :handleMenu

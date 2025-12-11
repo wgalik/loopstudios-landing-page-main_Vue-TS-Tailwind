@@ -27,40 +27,26 @@ header a {
     font-family: 'Alata', sans-serif;
     font-weight: 400;
   }
-  &:hover::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    width: 50%;
-    height: 1px;
-    background-color: currentColor;
-    transform: translateX(-50%);
-    @media (min-width: 40rem) {
-      bottom: -10px;
-      height: 2px;
-    }
-  }
 }
 footer a {
   font-family: 'Alata', sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  padding: 1rem 0;
+  padding-top: 1rem;
+}
 
-  &:hover::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    width: 50%;
-    height: 1px;
-    background-color: currentColor;
-    transform: translateX(-50%);
-    @media (min-width: 40rem) {
-      bottom: -10px;
-      height: 2px;
-    }
+a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 50%;
+  height: 1px;
+  background-color: currentColor;
+  transform: translateX(-50%);
+  @media (min-width: 40rem) {
+    bottom: -10px;
+    height: 2px;
   }
 }
 </style>
