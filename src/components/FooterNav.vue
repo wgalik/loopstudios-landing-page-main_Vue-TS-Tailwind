@@ -29,7 +29,7 @@ const { handleMenu, isMenuOpen, menuItems } = defineProps<{
     </ul>
     <FooterSocials />
     <p
-      class="self-baseline py-4 text-center text-(--grey200) sm:col-start-2 sm:row-start-2 sm:row-end-3 sm:text-right"
+      class="self-baseline py-4 text-center text-(--grey200) sm:col-start-2 sm:row-start-2 sm:row-end-3 sm:text-right sm:text-sm md:text-base"
     >
       © 2021 Loopstudios. All rights reserved.
     </p>

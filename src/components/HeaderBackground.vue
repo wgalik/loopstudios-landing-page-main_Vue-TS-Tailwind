@@ -1,7 +1,11 @@
 <script setup lang="ts">
-const { scrollY } = defineProps<{
-  scrollY: number
-}>()
+import heroMobileImg from '../assets/images/mobile/image-hero.jpg'
+import heroDesktopImg from '../assets/images/desktop/image-hero.jpg'
+
+const { isSm, scrollY } = defineProps<{ isSm: boolean; scrollY: number }>()
+
+const imageMobile: string = heroMobileImg
+const imageDesktop: string = heroDesktopImg
 </script>
 
 <template>
@@ -13,16 +17,12 @@ const { scrollY } = defineProps<{
   ></div>
   <div
     id="hero-background"
-    class="absolute inset-0 z-1 h-[90dvh] w-full bg-cover bg-bottom bg-no-repeat"
+    class="bg- absolute inset-0 z-1 h-[90dvh] w-full bg-cover bg-bottom bg-no-repeat"
+    :style="{
+      backgroundImage: `url(${isSm ? heroDesktopImg : heroMobileImg})`,
+    }"
     aria-hidden="true"
   ></div>
 </template>
 
-<style scoped lang="scss">
-#hero-background {
-  background-image: url('../images/mobile/image-hero.jpg');
-  @media (min-width: 40rem) {
-    background-image: url('../images/desktop/image-hero.jpg');
-  }
-}
-</style>
+<style scoped lang="scss"></style>

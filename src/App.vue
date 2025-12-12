@@ -56,7 +56,7 @@ onUnmounted(() => {
   <header class="relative z-10 flex w-full items-center justify-center">
     <HeaderNav :handleMenu :isMenuOpen :menuItems :scrollY />
     <HeaderHero />
-    <HeaderBackground :scrollY />
+    <HeaderBackground :isSm :scrollY />
   </header>
   <main class="grid w-full justify-center gap-20">
     <AboutSection :isSm />

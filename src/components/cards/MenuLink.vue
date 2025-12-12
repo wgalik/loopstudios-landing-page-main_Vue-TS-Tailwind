@@ -37,7 +37,6 @@ footer {
     a {
       font-family: 'Alata', sans-serif;
       font-weight: 400;
-      font-size: 1rem;
       padding-top: 1rem;
     }
   }

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const { isSm } = defineProps<{ isSm: boolean }>()
 
-import aboutMoblieImg from '../assets/images/mobile/image-interactive.jpg'
+import aboutMobileImg from '../assets/images/mobile/image-interactive.jpg'
 import aboutDesktopImg from '../assets/images/desktop/image-interactive.jpg'
 
-const imageMobile: string = aboutMoblieImg
+const imageMobile: string = aboutMobileImg
 const imageDesktop: string = aboutDesktopImg
 </script>
 

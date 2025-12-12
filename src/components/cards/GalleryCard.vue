@@ -19,7 +19,7 @@ const { content, img } = defineProps<{
       class="z-0 col-start-1 col-end-2 row-start-1 row-end-2 h-full w-full object-cover object-center"
     />
     <h3
-      class="z-1 col-start-1 col-end-2 row-start-1 row-end-2 w-[50%] self-end p-6 text-2xl leading-none sm:w-[70%]"
+      class="z-1 col-start-1 col-end-2 row-start-1 row-end-2 w-[50%] self-end p-6 text-2xl leading-none sm:w-[70%] sm:text-xl md:text-2xl"
     >
       {{ content }}
     </h3>
