@@ -4,8 +4,6 @@ import heroDesktopImg from '../assets/images/desktop/image-hero.jpg'
 
 const { isSm, scrollY } = defineProps<{ isSm: boolean; scrollY: number }>()
 
-const imageMobile: string = heroMobileImg
-const imageDesktop: string = heroDesktopImg
 </script>
 
 <template>
