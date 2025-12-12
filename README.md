@@ -14,15 +14,20 @@ Key features include:
 - Products section with hover effects and grid layout
 - Footer with navigation and social media icons
 
-## 🛠 Technologies Used
+## 🔗 Live Demo
+
+[Page](https://wgalik.github.io/loopstudios-landing-page-main_Vue-TS-Tailwind/)
+
+## 🛠️ Technologies Used
 
 - **Vue 3** – JavaScript framework for building UI
 - **TypeScript** – Static type checking
 - **TailwindCSS** – Utility-first CSS framework
 - **SCSS** – Nested CSS and variables
-- **Vite** – Bundler and dev server  
+- **Vite** – Bundler and dev server
 
 ## 📂 Project Structure
+
 ```
 src/
 ├─ assets/
@@ -55,7 +60,7 @@ src/
 - **Mobile-first design** with smooth animations
 - **Colors:** Black, white, grey
 - **Typography:** Josefin Sans for headings, Alata for body text
-- **Hover effects:** Gradient overlays on product cards  
+- **Hover effects:** Gradient overlays on product cards
 
 ## 📌 License
 
