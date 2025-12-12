@@ -16,22 +16,14 @@ const { content, img } = defineProps<{
     <img
       :src="img"
       :alt="content"
-      class="z-0 h-full w-full object-cover object-center"
+      class="z-0 col-start-1 col-end-2 row-start-1 row-end-2 h-full w-full object-cover object-center"
     />
-    <h3 class="z-1 w-[50%] self-end p-6 text-2xl leading-none sm:w-[70%]">
+    <h3
+      class="z-1 col-start-1 col-end-2 row-start-1 row-end-2 w-[50%] self-end p-6 text-2xl leading-none sm:w-[70%]"
+    >
       {{ content }}
     </h3>
   </article>
 </template>
 
-<style scoped lang="scss">
-img {
-  grid-area: 1 /1 /2 /2;
-}
-h3 {
-  grid-area: 1 /1 /2 /2;
-  &:hover #gradient {
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-}
-</style>
+<style scoped lang="scss"></style>

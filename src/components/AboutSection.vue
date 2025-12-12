@@ -18,11 +18,11 @@ const imageDesktop: string = aboutDesktopImg
       v-else
       :src="imageDesktop"
       alt="Image interactive"
-      class="z-0 h-full w-full object-cover"
+      class="z-0 h-full w-full object-cover sm:col-start-1 sm:col-end-4 sm:row-start-1 sm:row-end-4"
     />
 
     <article
-      class="z-1 grid bg-(--white) sm:row-start-2 sm:row-end-3 sm:grid-rows-subgrid sm:ps-20"
+      class="z-1 grid bg-(--white) sm:col-start-3 sm:col-end-5 sm:row-start-2 sm:row-end-5 sm:grid-rows-subgrid sm:ps-20"
     >
       <h2
         class="mt-12 text-center text-4xl uppercase sm:row-start-1 sm:row-end-2 sm:mt-0 sm:self-end sm:text-start sm:text-[clamp(2rem,4vw,3rem)]"
@@ -41,13 +41,4 @@ const imageDesktop: string = aboutDesktopImg
   </section>
 </template>
 
-<style scoped lang="scss">
-@media (min-width: 40rem) {
-  img {
-    grid-area: 1 /1 /4 /4;
-  }
-  article {
-    grid-area: 2 /3 /5 /5;
-  }
-}
-</style>
+<style scoped lang="scss"></style>

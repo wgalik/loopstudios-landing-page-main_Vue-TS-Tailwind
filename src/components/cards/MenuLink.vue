@@ -28,11 +28,19 @@ header a {
     font-weight: 400;
   }
 }
-footer a {
-  font-family: 'Alata', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  padding-top: 1rem;
+footer {
+  li {
+    @media (min-width: 40rem) {
+      align-self: baseline;
+    }
+
+    a {
+      font-family: 'Alata', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+  }
 }
 
 a:hover::after {
@@ -44,9 +52,5 @@ a:hover::after {
   height: 1px;
   background-color: currentColor;
   transform: translateX(-50%);
-  @media (min-width: 40rem) {
-    bottom: -10px;
-    height: 2px;
-  }
 }
 </style>

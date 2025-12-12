@@ -83,7 +83,7 @@ const articules: Articule[] = [
 <template>
   <section
     id="products"
-    class="flex w-full max-w-276 flex-col items-center justify-center px-4 sm:flex-row sm:flex-wrap sm:justify-start"
+    class="flex w-full max-w-276 scroll-mt-45 flex-col items-center justify-center px-4 sm:flex-row sm:flex-wrap sm:justify-start"
   >
     <h2
       class="text-4xl uppercase sm:order-1 sm:basis-1/2 sm:text-[clamp(2rem,4vw,3rem)]"

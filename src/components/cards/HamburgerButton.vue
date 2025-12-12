@@ -29,6 +29,9 @@ const openMenuIcon = `
     type="button"
     class="z-30 sm:hidden"
     @click="handleMenu"
+    aria-controls="main-menu"
+    :aria-expanded="isMenuOpen"
+    aria-label="Toggle button"
     v-html="isMenuOpen ? closeMenuIcon : openMenuIcon"
   ></button>
 </template>

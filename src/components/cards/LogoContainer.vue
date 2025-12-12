@@ -6,12 +6,10 @@ const { handleMenu, isMenuOpen } = defineProps<{
 </script>
 
 <template>
-  <div
-    class="logo h-25 w-35 sm:mr-4 sm:w-45 sm:shrink-0"
-    aria-label="Loopstudios logo"
-  >
+  <div class="logo h-25 w-35 sm:mr-4 sm:w-45 sm:shrink-0">
     <a
       href="#"
+      aria-label="Loopstudios logo"
       @click="
         () => {
           if (isMenuOpen) handleMenu()
@@ -21,7 +19,7 @@ const { handleMenu, isMenuOpen } = defineProps<{
         class="h-full w-full"
         viewBox="0 0 192 32"
         preserveAspectRatio="xMidYMid meet"
-        aria-hidden
+        aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

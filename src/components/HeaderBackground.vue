@@ -9,10 +9,12 @@ const { scrollY } = defineProps<{
     id="menu-background"
     :class="scrollY ? 'bg-(--black)' : ''"
     class="fixed top-0 z-10 flex h-25 w-full transition duration-500 ease-linear"
+    aria-hidden="true"
   ></div>
   <div
     id="hero-background"
     class="absolute inset-0 z-1 h-[90dvh] w-full bg-cover bg-bottom bg-no-repeat"
+    aria-hidden="true"
   ></div>
 </template>
 
